@@ -1,4 +1,4 @@
-import React, { setState, useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import max from "./images/0.jpg";
 import speachBubble from "./images/speachbubble.png";
@@ -24,7 +24,7 @@ const BgImg = styled.div`
 `;
 
 const MessageContainer = styled.div`
-  display: ${(props) => (props.display == true ? "flex" : "none")};
+  display: ${(props) => (props.display === true ? "flex" : "none")};
   position: absolute;
   top: 8rem;
   left: 20rem;
@@ -35,7 +35,7 @@ const MessageContainer = styled.div`
 `;
 
 const Message = styled.div`
-  display: ${(props) => (props.display == true ? "flex" : "none")};
+  display: ${(props) => (props.display === true ? "flex" : "none")};
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -52,7 +52,7 @@ const ClickMe = styled.button`
   position: absolute;
   left: 40vw;
   top: 25vh;
-  display: ${(props) => (props.display == true ? "none" : "flex")};
+  display: ${(props) => (props.display === true ? "none" : "flex")};
   height: 4rem;
   width: 7rem;
   border: none;
